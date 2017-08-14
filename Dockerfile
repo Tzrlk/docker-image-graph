@@ -12,6 +12,7 @@ RUN apk update && apk add \
 
 RUN gem install --no-rdoc --no-ri \
 	docker-api \
+	excon:'>=0.46.0' \
 	sinatra
 
 RUN dot -c
